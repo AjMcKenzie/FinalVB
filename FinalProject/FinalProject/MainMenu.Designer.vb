@@ -22,29 +22,78 @@ Partial Class MainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.components = New System.ComponentModel.Container()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblLogoName = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.picLogo = New System.Windows.Forms.PictureBox()
+        CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnStart
         '
-        Me.Button1.Location = New System.Drawing.Point(137, 100)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnStart.Location = New System.Drawing.Point(155, 78)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(90, 35)
+        Me.btnStart.TabIndex = 0
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        Me.btnStart.Visible = False
+        '
+        'Timer1
+        '
+        '
+        'lblLogoName
+        '
+        Me.lblLogoName.AutoSize = True
+        Me.lblLogoName.Font = New System.Drawing.Font("Comic Sans MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogoName.Location = New System.Drawing.Point(12, 282)
+        Me.lblLogoName.Name = "lblLogoName"
+        Me.lblLogoName.Size = New System.Drawing.Size(381, 49)
+        Me.lblLogoName.TabIndex = 2
+        Me.lblLogoName.Text = "TurtleEntertainments"
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(155, 138)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(90, 35)
+        Me.btnExit.TabIndex = 3
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.Visible = False
+        '
+        'picLogo
+        '
+        Me.picLogo.Image = Global.FinalProject.My.Resources.Resources.TurtleGames
+        Me.picLogo.Location = New System.Drawing.Point(72, 28)
+        Me.picLogo.Name = "picLogo"
+        Me.picLogo.Size = New System.Drawing.Size(256, 241)
+        Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picLogo.TabIndex = 1
+        Me.picLogo.TabStop = False
         '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(402, 358)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.lblLogoName)
+        Me.Controls.Add(Me.btnStart)
+        Me.Controls.Add(Me.picLogo)
         Me.Name = "MainMenu"
         Me.Text = "Form1"
+        CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnStart As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents picLogo As System.Windows.Forms.PictureBox
+    Friend WithEvents lblLogoName As System.Windows.Forms.Label
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 
 End Class
