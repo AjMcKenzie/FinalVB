@@ -156,6 +156,7 @@
     <None Include="Resources\volcano.jpg" />
   </ItemGroup>
   <ItemGroup>
+
     <None Include="Resources\plains level.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\key for plains.png" />
+
+    <None Include="Resources\treeLevel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volcano1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MountainsBackground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num2.png" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
